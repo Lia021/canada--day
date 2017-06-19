@@ -58,19 +58,24 @@
 
       <a-mixin id="crown" collada-model="#crown" collapse-model></a-mixin>
  
-      <a-mixin id="parent-to-head"scale="1.45 1.45 1.45" position="0 0.25 0.02" rotation="-90 0 0" n-skeleton-parent="part:head;" sync sync-n-skeleton-parent></a-mixin>
+      <a-mixin id="parent-to-head"scale="1.45 1.45 1.45" position="0 0.24 0.08" rotation="-76 0 0" n-skeleton-parent="part:head;" sync sync-n-skeleton-parent></a-mixin>
  
 
       </a-assets>
 
-<a-sky radius="300" src="https://rawgit.com/Lia021/canada-day/master/cubic_map_to_equirectangular_by_tatasz-da6uf3d.jpg"></a-sky>
+<a-sky radius="300" src="https://rawgit.com/Lia021/canada-day/master/test-sky.jpg"></a-sky>
 
 <!--crown-->
       <a-entity position="0 1 0" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
  
-<!--inclser 2-->
+<!--inclser 1-->
 <a-entity position="-3 2 0" rotation="0 90 0" scale="5 5 5"
   			n-layout-browser="url: https://video-jukebox.firebaseapp.com/; isEnclosure:true">
+  		</a-entity>
+
+ <!--inclser 2-->
+<a-entity position="3 2 0" rotation="0 90 0" scale="5 5 5"
+  			n-layout-browser="url: ; isEnclosure:true">
   		</a-entity>
 
 
