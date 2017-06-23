@@ -53,7 +53,7 @@
 
 <a-asset-item id="crown" src="https://rawgit.com/Lia021/canada-day/master/hat/hat2.dae"></a-asset-item>
 <a-asset-item id="test" src="https://rawgit.com/Lia021/canada-day/master/canada/cada4.dae"></a-asset-item>
-
+<a-asset-item id="black star" src="https://rawgit.com/Lia021/canada-day/master/black%20star/black%20star2.dae"></a-asset-item>
 
 
 
@@ -69,8 +69,12 @@
 <!--crown-->
       <a-entity position="0 1 0" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
  
-    <!--test-->
+<!--test-->
       <a-entity position="0 0 0" scale="10 5 10" rotation="0 90 0" collada-model="#test"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+<!--black star-->
+      <a-entity position="0 2 0" scale="1 1 1" rotation="0 90 0" collada-model="#black star"n-mesh-collider="type: environment; convex: false"></a-entity>
+
 
 
 <!--inclser 1-->
