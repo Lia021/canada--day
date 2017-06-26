@@ -54,7 +54,9 @@
 <a-asset-item id="crown" src="https://rawgit.com/Lia021/canada-day/master/hat/hat2.dae"></a-asset-item>
 <a-asset-item id="test" src="https://rawgit.com/Lia021/canada-day/master/canada/cada4.dae"></a-asset-item>
 <a-asset-item id="blackstar" src="https://rawgit.com/Lia021/canada-day/master/black%20star/black%20star2.dae"></a-asset-item>
-
+<a-asset-item id="poutine" src="https://rawgit.com/Lia021/canada-day/master/poutine/poutine.dae"></a-asset-item>
+<a-asset-item id="Evil-cake" src="https://rawgit.com/Lia021/canada-day/master/evil-cake/evil-cake2.dae"></a-asset-item>
+<a-asset-item id="sign" src="https://rawgit.com/Lia021/theater-space/master/Altspace%20symbol/Altspace%20symbol1.dae"></a-asset-item>
 
 
       <a-mixin id="crown" collada-model="#crown" collapse-model></a-mixin>
@@ -63,8 +65,12 @@
  
 
       </a-assets>
+<!--sky-->
+     <a-sky radius="300" color="black"></a-sky>
 
-<a-sky radius="300" src="https://rawgit.com/Lia021/canada-day/master/test-sky.jpg"></a-sky>
+<!-- Basic plane. -->
+      <a-plane position="0 -0.20 0"color="#050621"opacity="0.75" rotation="90 0 0"side="double"height="900" width="1000"></a-plane>
+
 
 <!--crown-->
       <a-entity position="0 1 0" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
@@ -72,8 +78,21 @@
 <!--test-->
       <a-entity position="0 0 0" scale="10 5 10" rotation="0 90 0" collada-model="#test"n-mesh-collider="type: environment; convex: false"></a-entity>
 
+<!--poutine-->
+      <a-entity position="3 1.50 2" scale="2 2 2" rotation="0 90 0" collada-model="#poutine"></a-entity>
+
+
 <!--black star-->
-      <a-entity position="0 2 0" scale="1 1 1" rotation="0 90 0" collada-model="#blackstar"n-mesh-collider="type: environment; convex: false"></a-entity>
+      <a-entity position="0 0 19" scale="6.50 6.50 6.50" rotation="0 90 0" collada-model="#blackstar"n-mesh-collider="type: environment; convex: false"></a-entity>
+
+<!--evil-cake-->
+      <a-entity position="0 1.20 19" scale="3 3 3" rotation="0 90 0" collada-model="#Evil-cake"><a-animation attribute="position" direction='alternate' from='0 1.20 19' to='0 1.10 19' ease-in-out='linear' dur='1900' repeat='indefinite' />
+    </a-entity>
+
+<!--evil-cake-->
+      <a-entity position="0 1.33 18.93" scale="0.20 0.20 0.20" rotation="0 90 90" collada-model="#sign"><a-animation attribute="position" direction='alternate' from='0 1.33 18.93' to='0 1.23 18.93' ease-in-out='linear' dur='1900' repeat='indefinite'/>
+    </a-entity>
+
 
 
 
