@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
-  <script src="https://sdk.altvr.com/libs/altspace.js/2.4.5/altspace.min.js"></script>
+  <script src="https://sdk.altvr.com/libs/altspace.js/2.6.0/altspace.min.js"></script>
   <script>
     // n-skeleton-parent only works with root meshes at the moment. Since most model loaders use a root
     // container object, we need to collapse the model so that n-skeleton-parent can access the mesh directly.
@@ -57,6 +57,7 @@
 <a-asset-item id="poutine" src="https://rawgit.com/Lia021/canada-day/master/poutine/poutine.dae"></a-asset-item>
 <a-asset-item id="Evil-cake" src="https://rawgit.com/Lia021/canada-day/master/evil-cake/evil-cake2.dae"></a-asset-item>
 <a-asset-item id="sign" src="https://rawgit.com/Lia021/theater-space/master/Altspace%20symbol/Altspace%20symbol1.dae"></a-asset-item>
+<a-asset-item id="robo" src="https://rawgit.com/Lia021/canada-day/master/plushy/robot.dae"></a-asset-item>
 
 
 
@@ -81,6 +82,9 @@
 
 <!--poutine-->
       <a-entity position="3 1.50 2" scale="2 2 2" rotation="0 90 0" collada-model="#poutine"></a-entity>
+
+<!--robo-->
+      <a-entity position="9.75 0 9.73" scale="3 3 3" rotation="0 180 0" collada-model="#robo"></a-entity>
 
 
 <!--black star-->
