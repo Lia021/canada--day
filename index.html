@@ -92,7 +92,7 @@
 
 
 <!--crown-->
-      <a-entity position="-9.75 1 0.50"rotation="90 90 0" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
+      <a-entity position="-9.50 1.15 0.50"rotation="-90 0 0" mixin="crown" instantiator="on: click;group: crown; mixin: crown parent-to-head"></a-entity>
  
 <!--test-->
       <a-entity position="0 0 0" scale="10 5 10" rotation="0 90 0" collada-model="#test"n-mesh-collider="type: environment; convex: false"></a-entity>
@@ -130,7 +130,41 @@
 <!--maple-->
       <a-entity position="-9.30 1.10 -0.50" scale="0.70 0.70 0.70" rotation="0 0 90"  mixin="maple" rotation="90 0 0" instantiator="on: click;group: maple; mixin: maple parent-to-right-hand"></a-entity>
 
+<!--sphere-->
 
+<a-sphere position="-9.30 26 -0.50"color="yellow" n-sphere-collider="type: environment; radius: 3"radius="3"></a-sphere>
+
+
+<!--sphere2-->
+
+<a-sphere position="-7 36 15"color="white" n-sphere-collider="type: environment; radius: 3"radius="3"></a-sphere>
+
+
+<!--sphere3-->
+
+<a-sphere position="9.30 26 -7"color="#ff6699" n-sphere-collider="type: environment; radius: 3"radius="3"></a-sphere>
+
+
+<!--sphere4-->
+
+<a-sphere position="9.50 46 26"color="#0099ff" n-sphere-collider="type: environment; radius: 3"radius="3"></a-sphere>
+
+
+<!--sphere5-->
+
+<a-sphere position="9.30 56 -0.05"color="#ff0000" n-sphere-collider="type: environment; radius: 3"radius="3"></a-sphere>
+
+<!-- Basic box. -->
+<a-box position="0 56 0"opacity="0.05"color="#3366ff" depth="10" height="0.1" width="10"n-mesh-collider="type: environment; convex: false"></a-box>
+
+<!--box-->
+
+<a-entity position="0 59 0" n-spawner='res: interactables/box'></a-entity>
+
+
+<!--fireworks-->
+
+<a-entity position="0 15 -35"n-object="res: effects/fireworks"></a-entity>
 
 
 <!--inclser 1-->
